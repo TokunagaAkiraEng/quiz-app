@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f4f7;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 32px 24px;
+  margin: 16px;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 24px;
+  margin: 0 0 24px;
+  color: #2c5282;
+}
+
+.progress {
+  text-align: right;
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.question-text {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin: 0 0 20px;
+  min-height: 3em;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.choice-btn {
+  padding: 12px 16px;
+  font-size: 15px;
+  text-align: left;
+  border: 2px solid #d9dee5;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.choice-btn:hover:not(:disabled) {
+  border-color: #2c5282;
+  background-color: #f0f6ff;
+}
+
+.choice-btn:disabled {
+  cursor: default;
+}
+
+.choice-btn.correct {
+  background-color: #e3fbe6;
+  border-color: #34a853;
+  color: #1e7e34;
+  font-weight: bold;
+}
+
+.choice-btn.incorrect {
+  background-color: #fdecea;
+  border-color: #ea4335;
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.feedback {
+  min-height: 1.6em;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 16px 0 0;
+}
+
+.feedback.correct {
+  color: #1e7e34;
+}
+
+.feedback.incorrect {
+  color: #c0392b;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2c5282;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn:hover {
+  background-color: #1f3f66;
+}
+
+.result-text {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.8;
+  margin: 12px 0 0;
+}
